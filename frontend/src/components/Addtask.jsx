@@ -2,7 +2,7 @@ import React from 'react'
 import { RxCross2 } from "react-icons/rx";
 import axios from 'axios'
 
-function Addtask({model , setModel}) {
+function Addtask({ model, setModel }) {
   const [task, setTask] = React.useState('')
   const [dscreption, setDscreption] = React.useState('')
   const submit = () => {
@@ -23,7 +23,7 @@ function Addtask({model , setModel}) {
       });
   }
 
-  
+
 
   return (
     <>
@@ -70,7 +70,7 @@ function Addtask({model , setModel}) {
         </div>
         <div className=' w-full flex justify-center'
           onClick={() => {
-           addTask()
+            addTask()
             document.querySelector('.fixed').classList.add('hidden')
           }}  >
           <button className=' bg-black text-white font-bold py-2 px-3 rounded-lg'>ADD Task</button>
