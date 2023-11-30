@@ -10,7 +10,7 @@ function App() {
   }
   return (
     <>
-      <Navbar model={model} setModel={setModel}/>
+      <Navbar model={model} setModel={setModel} />
       <div className=" gap-2 sm:m-2 m-1  grid lg:grid-cols-3 ">
         <Todocard />
       </div>
