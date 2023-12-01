@@ -49,20 +49,17 @@ function Todocard() {
 
   return (
     <>
-
       {todos[0] ?
         todos.map((todo) => {
           return (
             <div className={todo.status ? "bg-green-400" : "bg-white"} key={todo._id}>
-              <div className='  w-full   p-4 border-2 border-gray-400 rounded-md shadow-xl'
-              >
+              <div className='  w-full   p-4 border-2 border-gray-400 rounded-md shadow-xl'>
                 <div>
                   <h1 className=' text-xl font-bold'>{todo.title}</h1>
                 </div>
                 <div className=' text-sm xl:text-lg py-3'>
                   {todo.description}
                 </div>
-
                 <div className=' w-full flex justify-end md:gap-5 gap-2'>
                   <button className=' py-1 px-3 rounded-lg hover:bg-red-600 font-bold bg-red-400' onClick={() => {
                     deleteTask(todo._id)
