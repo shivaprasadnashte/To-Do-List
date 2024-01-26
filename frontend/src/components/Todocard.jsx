@@ -82,7 +82,7 @@ function Todocard() {
         : <div className=' text-2xl font-bold text-center'>No Task Found</div>
       }
     </>
-  )
+  ) 
 }
 
-export default Todocard
+export default Todocard 

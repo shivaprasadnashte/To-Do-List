@@ -8,7 +8,7 @@ connectDB();
 app.use(express.json({ extended: false }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-//get request
+//get 
 app.get("/todos", async (req, res) => {
   try {
     let response = await todoSchema.find({});
@@ -18,7 +18,7 @@ app.get("/todos", async (req, res) => {
       msg: "Something went wrong!",
       error: error.message,
     });
-  }
+  }  
 });
 //put request
 
